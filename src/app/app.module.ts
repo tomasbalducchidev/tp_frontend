@@ -14,6 +14,9 @@ import { NewmessagesComponent } from './components/newmessages/newmessages.compo
 import { MessagesComponent } from './components/messages/messages.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,10 @@ import { MatButtonModule } from '@angular/material/button';
     MatSliderModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
