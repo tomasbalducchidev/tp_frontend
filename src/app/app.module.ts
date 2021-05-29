@@ -26,7 +26,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NewmessagesComponent,
     MessagesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatSliderModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatSliderModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
