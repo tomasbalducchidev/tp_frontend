@@ -1,1 +1,36 @@
-<p>newmessages works!</p>
+<section>
+  <div class="newmsg__container">
+    <div>
+      <h1>Enviar mensaje</h1>
+    </div>
+    <div class="form__container">
+      <!-- despl y caja de texto -->
+      <form class="example-form">
+        <mat-form-field appearance="fill">
+          <mat-label>Contactos</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let contacto of contactos"
+              [value]="contacto.value"
+            >
+              {{ contacto.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Mensaje...</mat-label>
+          <textarea matInput placeholder=""></textarea>
+        </mat-form-field>
+      </form>
+    </div>
+
+    <div class="botones">
+      <!-- boton send -->
+      <a class="boton" mat-raised-button color="accent">Enviar</a>
+      <a routerLink="/home" class="boton" mat-raised-button color="accent"
+        >Volver</a
+      >
+    </div>
+  </div>
+</section>

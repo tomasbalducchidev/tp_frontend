@@ -1,1 +1,61 @@
-<p>register works!</p>
+<section>
+  <div class="registro__container">
+    <div>
+      <h1>Registro</h1>
+    </div>
+    <div class="form__container">
+      <!-- form -->
+      <form class="example-form">
+        <mat-form-field appearance="fill">
+          <mat-label>Ingrese su email</mat-label>
+          <input
+            matInput
+            placeholder="pepe@example.com"
+            [formControl]="email"
+            required
+          />
+          <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Ingrese su contraseña</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" />
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="hide = !hide"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide"
+          >
+            <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Ciudad</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let ciudad of ciudades" [value]="ciudad.value">
+              {{ ciudad.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>País</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let pais of paises" [value]="pais.value">
+              {{ pais.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </div>
+    <div>
+      <!-- botones -->
+      <a routerLink="/login" class="boton" mat-raised-button color="accent"
+        >Registrarse</a
+      >
+      <a routerLink="/home" class="boton" mat-raised-button color="accent"
+        >Volver</a
+      >
+    </div>
+  </div>
+</section>
