@@ -1,7 +1,7 @@
 <section>
   <div>
     <div>
-      <h1>Mensajes recibidos</h1>
+      <h1>Mensajes enviados</h1>
     </div>
     <div>
       <!-- tabla -->
@@ -11,7 +11,7 @@
 
         <!-- Name Column -->
         <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef>De</th>
+          <th mat-header-cell *matHeaderCellDef>Para</th>
           <td mat-cell *matCellDef="let element">{{ element.name }}</td>
         </ng-container>
 
@@ -37,11 +37,11 @@
             >Nuevo mensaje</a
           >
           <a
-            routerLink="/enviados"
+            routerLink="/recibidos"
             class="boton"
             mat-raised-button
             color="accent"
-            >Enviados</a
+            >Recibidos</a
           >
           <a routerLink="/home" class="boton" mat-raised-button color="accent"
             >Volver</a

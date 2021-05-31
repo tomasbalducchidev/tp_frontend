@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface MensajesRecibidos {
+export interface MensajesEnviados {
   name: string;
 
   message: string;
 }
 
-const ELEMENT_DATA: MensajesRecibidos[] = [
+const ELEMENT_DATA: MensajesEnviados[] = [
   { name: 'Carlos', message: 'Holaaa' },
   { name: 'Carla', message: 'Hello' },
   { name: 'Pedro', message: 'Que tal?' },
@@ -14,13 +14,14 @@ const ELEMENT_DATA: MensajesRecibidos[] = [
 ];
 
 @Component({
-  selector: 'app-messages',
-  templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.scss'],
+  selector: 'app-sentmessages',
+  templateUrl: './sentmessages.component.html',
+  styleUrls: ['./sentmessages.component.scss'],
 })
-export class MessagesComponent implements OnInit {
+export class SentmessagesComponent implements OnInit {
   displayedColumns: string[] = ['name', 'message'];
   dataSource = ELEMENT_DATA;
+
   constructor() {}
 
   ngOnInit(): void {}
