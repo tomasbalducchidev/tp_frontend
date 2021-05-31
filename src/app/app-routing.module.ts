@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/register/register.component';
 import { NewmessagesComponent } from './components/newmessages/newmessages.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { SentmessagesComponent } from './components/sentmessages/sentmessages.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'newmessages', component: NewmessagesComponent },
   { path: 'recibidos', component: MessagesComponent },
+  { path: 'enviados', component: SentmessagesComponent },
 ];
 
 @NgModule({

@@ -21,6 +21,9 @@ import { MatInputModule } from '@angular/material/input';
 
 import { MatSelectModule } from '@angular/material/select';
 
+import { MatTableModule } from '@angular/material/table';
+import { SentmessagesComponent } from './components/sentmessages/sentmessages.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +35,7 @@ import { MatSelectModule } from '@angular/material/select';
     HomeComponent,
     NewmessagesComponent,
     MessagesComponent,
+    SentmessagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +49,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatIconModule,
     MatInputModule,
     MatSelectModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
