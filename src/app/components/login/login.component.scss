@@ -1,3 +1,101 @@
+// .example-container .mat-form-field + .mat-form-field {
+//   margin-left: 8px;
+// }
+
+// .example-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .iniciar {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .example-container .mat-form-field + .mat-form-field {
+//   margin-left: 8px;
+// }
+
+// .example-right-align {
+//   text-align: right;
+// }
+
+// input.example-right-align::-webkit-outer-spin-button,
+// input.example-right-align::-webkit-inner-spin-button {
+//   display: none;
+// }
+
+// input.example-right-align {
+//   -moz-appearance: textfield;
+// }
+
+// .botones__container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .boton {
+//   margin: 10px;
+// }
+
+// .login__container {
+//   border-style: solid;
+//   background-color: rgb(115, 118, 121);
+//   margin-left: 500px;
+//   margin-right: 500px;
+//   padding-top: 40px;
+//   padding-bottom: 40px;
+//   margin-bottom: 50px;
+// }
+
+// section {
+//   background-color: rgb(36, 48, 61);
+// }
+
+//-------------------------------
+
+@use "../../shared/abstracts/colors" as *;
+.main {
+  // margin-top: 50px;
+  min-height: calc(100vh - 140px);
+  /*calc(100vh - 220px);*/ //puedo hacer calculos con sass.
+  background-color: $background-color;
+
+  &_content {
+    // max-width: 1200px;
+    margin: 0 auto;
+    // background-color: $background-color;
+
+    &_subtitle {
+      color: $primary-color;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 800;
+      margin-bottom: 5px;
+
+      padding-top: 70px;
+    }
+
+    &_buttons {
+      font-size: 20px;
+      text-align: center;
+
+      padding: 10px;
+
+      &--button {
+        color: $blackish;
+        background-color: $background-color-strong;
+        margin: 20px;
+        font-size: 25px;
+        padding: 20px;
+      }
+    }
+  }
+}
+
 .example-container .mat-form-field + .mat-form-field {
   margin-left: 8px;
 }
@@ -12,6 +110,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: $blackish;
 }
 
 .example-container .mat-form-field + .mat-form-field {
@@ -39,18 +138,22 @@ input.example-right-align {
 
 .boton {
   margin: 10px;
+  background-color: $background-color;
+  color: $background-color-strong;
 }
 
 .login__container {
   border-style: solid;
-  background-color: rgb(115, 118, 121);
+  border-color: $blackish;
+  background-color: $background-color-strong;
   margin-left: 500px;
   margin-right: 500px;
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-section {
-  background-color: rgb(36, 48, 61);
-}
+// section {
+//   background-color: rgb(36, 48, 61);
+// }
