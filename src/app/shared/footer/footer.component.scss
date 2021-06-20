@@ -1,9 +1,25 @@
-.footer__container {
-  display: flex;
-  background-color: rgb(115, 118, 121);
-  min-height: 30px;
-}
+// .footer__container {
+//   display: flex;
+//   background-color: rgb(115, 118, 121);
+//   min-height: 30px;
+// }
 
-.footer__content {
-  margin-left: 50px;
+// .footer__content {
+//   margin-left: 50px;
+// }
+
+//--------------------------------------------------------
+
+@use "../abstracts/colors" as *;
+.footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color-strong;
+
+  h4 {
+    font-size: 24px;
+    font-weight: 300;
+  }
 }
