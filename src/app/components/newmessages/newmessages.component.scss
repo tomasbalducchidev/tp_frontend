@@ -1,7 +1,15 @@
+@use "../../shared/abstracts/colors" as *;
+
+.main {
+  min-height: calc(100vh - 130px);
+  background-color: $background-color;
+}
+
 .example-form {
   min-width: 150px;
   max-width: 500px;
   width: 100%;
+  text-align: center;
 }
 
 .example-full-width {
@@ -13,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   border-style: solid;
-  border-radius: 10%;
+
   max-width: 400px;
   margin-left: 500px;
   margin-right: 500px;
@@ -21,6 +29,7 @@
   margin-bottom: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: $background-color-strong;
 }
 
 .form__container {
