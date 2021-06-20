@@ -1,9 +1,48 @@
-.header__container {
-  display: flex;
-  background-color: rgb(115, 118, 121);
-  min-height: 30px;
-}
+// .header__container {
+//   display: flex;
+//   background-color: rgb(115, 118, 121);
+//   min-height: 30px;
+// }
 
-.header__content {
-  margin-left: 50px;
+// .header__content {
+//   margin-left: 50px;
+// }
+
+//------------------------------------------------------------
+
+.header {
+  background-color: $background-color-strong;
+
+  &_content {
+    // background-color: red;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+
+    display: flex; //el contenido flexible debe ser el padre de los elementos a acomodar. En ese caso, el div header_content es el padre, o sea que contiene al h1 header_content_title y al div header_content_links.
+    justify-content: space-between; //elijo como alinear los elementos que estan dentro de header_content. En este caso lo que quiero es que se cree un espacio justificado entre ellos para que queden a los extremos. Se alineara asi porque por defecto ell eje principal es el X.
+    align-items: center;
+
+    h1 {
+      //aca voy embebiendo los selectores segun están embebidos en el html
+      color: $primary-color;
+      font-weight: 300;
+    }
+
+    &_links {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: $whitish;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
 }
