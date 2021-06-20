@@ -1,3 +1,5 @@
+@use "../../shared/abstracts/colors" as *;
+
 table {
   width: 100%;
 }
@@ -10,4 +12,19 @@ table {
 
 .boton {
   margin: 10px;
+  color: $background-color;
+  background-color: $background-color-strong;
+}
+
+.title {
+  color: $primary-color;
+  margin-left: 75px;
+}
+
+.section {
+  min-height: calc(100vh - 120px);
+}
+
+.table {
+  margin: 50px;
 }

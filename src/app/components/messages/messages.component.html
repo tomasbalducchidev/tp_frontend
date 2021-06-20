@@ -1,9 +1,9 @@
-<section>
+<section class="section">
   <div>
     <div>
-      <h1>Mensajes recibidos</h1>
+      <h1 class="title">Mensajes recibidos</h1>
     </div>
-    <div>
+    <div class="table">
       <!-- tabla -->
       <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
         <!--- Note that these columns can be defined in any order.
@@ -29,23 +29,11 @@
       <!-- botonnuevomsj -->
       <div class="botones__container">
         <div>
-          <a
-            routerLink="/newmessages"
-            class="boton"
-            mat-raised-button
-            color="accent"
+          <a routerLink="/newmessages" class="boton" mat-raised-button
             >Nuevo mensaje</a
           >
-          <a
-            routerLink="/enviados"
-            class="boton"
-            mat-raised-button
-            color="accent"
-            >Enviados</a
-          >
-          <a routerLink="/home" class="boton" mat-raised-button color="accent"
-            >Volver</a
-          >
+          <a routerLink="/enviados" class="boton" mat-raised-button>Enviados</a>
+          <a routerLink="/home" class="boton" mat-raised-button>Volver</a>
         </div>
       </div>
     </div>
