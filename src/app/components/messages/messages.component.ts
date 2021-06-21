@@ -11,6 +11,10 @@ const ELEMENT_DATA: MensajesRecibidos[] = [
   { name: 'Carla', message: 'Hello' },
   { name: 'Pedro', message: 'Que tal?' },
   { name: 'Maria', message: 'Chau!' },
+  { name: 'Carlos', message: 'Holaaa' },
+  { name: 'Carla', message: 'Hello' },
+  { name: 'Pedro', message: 'Que tal?' },
+  { name: 'Maria', message: 'Chau!' },
 ];
 
 @Component({
