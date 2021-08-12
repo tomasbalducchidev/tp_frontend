@@ -61,6 +61,7 @@
         <mat-form-field class="label" appearance="fill">
           <mat-label>Ingrese su email</mat-label>
           <input
+            id="campo"
             matInput
             placeholder="pepe@example.com"
             [formControl]="email"
@@ -87,7 +88,14 @@
     </div>
     <div class="botones__container">
       <div>
-        <a routerLink="/recibidos" class="boton" mat-raised-button>Ingresar</a>
+        <a
+          (click)="logIn()"
+          routerLink="/recibidos"
+          class="boton"
+          id="login"
+          mat-raised-button
+          >Ingresar</a
+        >
         <a routerLink="/home" class="boton" mat-raised-button>Volver</a>
       </div>
     </div>
