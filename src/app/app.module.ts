@@ -23,6 +23,7 @@ import { MatSelectModule } from '@angular/material/select';
 
 import { MatTableModule } from '@angular/material/table';
 import { SentmessagesComponent } from './components/sentmessages/sentmessages.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { SentmessagesComponent } from './components/sentmessages/sentmessages.co
     MatInputModule,
     MatSelectModule,
     MatTableModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
