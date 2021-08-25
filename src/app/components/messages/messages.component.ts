@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { receivedData } from 'src/app/models/receivedData';
+
 import { ReceivedService } from 'src/app/services/received.service';
 
 export interface MensajesRecibidos {
@@ -27,13 +27,12 @@ const ELEMENT_DATA: MensajesRecibidos[] = [
 export class MessagesComponent implements OnInit {
   displayedColumns: string[] = ['name', 'message'];
   dataSource = ELEMENT_DATA;
-  receivedList: any[] = [];
 
   constructor(private _receivedService: ReceivedService) {}
 
   ngOnInit(): void {
     this._receivedService.getAllReceived().subscribe((data) => {
-      this.receivedList = data.name;
+      this.dataSource = data.name;
       console.log(data);
     });
   }

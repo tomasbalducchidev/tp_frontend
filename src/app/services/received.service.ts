@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { receivedData } from '../models/receivedData';
+import { MensajesRecibidos } from '../components/messages/messages.component';
 
 @Injectable({
   providedIn: 'root',
@@ -11,6 +11,6 @@ export class ReceivedService {
   constructor(private http: HttpClient) {}
 
   getAllReceived() {
-    return this.http.get<receivedData>(this._memorandosUrl);
+    return this.http.get<MensajesRecibidos>(this._memorandosUrl);
   }
 }
